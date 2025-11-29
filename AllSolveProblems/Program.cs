@@ -1,4 +1,7 @@
-﻿using static System.Console;
+﻿using System.Diagnostics;
+using static System.Console;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace AllSolveProblems
 {
@@ -6,25 +9,15 @@ namespace AllSolveProblems
     {
         static void Main(string[] args)
         {
+            //var res = Solution.ProductExceptSelf([1, 2, 3, 4]);
+            //var res = Solution.ProductExceptSelf([-1, 1, 0, -3, 3]);
+            //foreach (var i in res) Write(i + " ");
 
-            #region Week 01
-
-            SolutionWeek01 solution = new SolutionWeek01();
-
-            var res = solution.LongestCommonPrefix(["flower", "flow", "flight"]);
-            WriteLine(res);
-
-
-            //var res = solution.TopKFrequent([1, 1, 1, 2, 2, 3], 2);
-            //WriteLine(string.Join(", ", res));
-
-
-            //var res = solution.IsValid("([{]})");
-            //WriteLine(res);
-
-            #endregion
-
+            WriteLine(Solution.ReverseWords("the sky is blue"));
+            WriteLine(Solution.ReverseWords("  hello   world  "));
+            WriteLine(Solution.ReverseWords("a good   example"));
 
         }
+        
     }
 }
